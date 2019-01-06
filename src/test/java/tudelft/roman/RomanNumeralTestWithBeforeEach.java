@@ -6,11 +6,11 @@ import org.junit.jupiter.api.Test;
 
 public class RomanNumeralTestWithBeforeEach {
 
-    private RomanNumeral roman;
+private RomanNumeral roman;
 
     @BeforeEach
     public void initialize() {
-        this.roman = new RomanNumeral();
+      roman = new RomanNumeral();
     }
 
     @Test
