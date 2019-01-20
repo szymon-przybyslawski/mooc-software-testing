@@ -3,7 +3,8 @@ package tudelft.blackjack;
 public class BlackJack {
 
     public int play(int left, int right) {
-        int ln = left;
+        int ln = left
+                ;
         int rn = right;
         if(ln > 21)
             ln = 0;

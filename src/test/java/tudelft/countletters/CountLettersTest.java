@@ -17,4 +17,20 @@ public class CountLettersTest {
         Assertions.assertEquals(1, words);
     }
 
+    @Test
+    public void lastisR() {
+        int words = new CountLetters().count("catr|dog");
+        Assertions.assertEquals(1, words);
+    }
+
+    @Test
+    public void lastisnotRorS() {
+        int words = new CountLetters().count("catg|dog");
+        Assertions.assertEquals(0, words);
+    }
+    @Test
+    public void lastisR2() {
+        int words = new CountLetters().count("catg|dogr");
+        Assertions.assertEquals(1, words);
+    }
 }
